@@ -1,4 +1,4 @@
-#Client
+# Client
 
  `swoole_client`提供了`tcp/udp socket`的客户端的封装代码，使用时仅需 `new swoole_client` 即可。
 `swoole`的`socket client`对比PHP提供的`stream`族函数有哪些好处：

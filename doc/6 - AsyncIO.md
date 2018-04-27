@@ -1,4 +1,4 @@
-#AsyncIO
+# AsyncIO
 
  `1.6.12`版本增加了异步文件读写，异步DNS，异步Http/WebSocket客户端等特性。开发纯异步非阻塞IO的程序时，不能使用`PHP`自带的网络客户端，如`curl`、`file_get_contents`、`stream`、`sockets`、`mysql`、`redis`。
 

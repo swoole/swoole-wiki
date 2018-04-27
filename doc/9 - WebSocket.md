@@ -1,4 +1,4 @@
-#WebSocket
+# WebSocket
 
  `1.7.9`增加了内置的`WebSocket`服务器支持，通过几行PHP代码就可以写出一个异步非阻塞多进程的`WebSocket`服务器。
 
