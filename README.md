@@ -2,7 +2,49 @@
 
 全量MarkDown版本
 
-## 目录
+
+
+## 简介
+
+PHP的异步、并行、高性能网络通信引擎，使用纯C语言编写，提供了[PHP语言的异步多线程服务器](https://wiki.swoole.com/wiki/page/p-server.html)，[异步TCP/UDP网络客户端](https://wiki.swoole.com/wiki/page/p-client.html)，[异步MySQL](https://wiki.swoole.com/wiki/page/517.html)，[异步Redis](https://wiki.swoole.com/wiki/page/p-redis.html)，[数据库连接池](https://github.com/swoole/framework/blob/master/tests/async_mysql.php)，[AsyncTask](https://wiki.swoole.com/wiki/page/134.html)，[消息队列](http://wiki.swoole.com/wiki/page/289.html)，[毫秒定时器](https://wiki.swoole.com/wiki/page/244.html)，[异步文件读写](https://wiki.swoole.com/wiki/page/183.html)，[异步DNS查询](https://wiki.swoole.com/wiki/page/186.html)。 Swoole内置了[Http/WebSocket服务器端](https://wiki.swoole.com/wiki/page/326.html)/[客户端](https://wiki.swoole.com/wiki/page/p-http_client.html)、[Http2.0服务器端](https://wiki.swoole.com/wiki/page/326.html)/[客户端](https://wiki.swoole.com/wiki/page/708.html)。
+
+Swoole底层内置了异步非阻塞、多线程的网络IO服务器。PHP程序员仅需处理事件回调即可，无需关心底层。与`Nginx`/`Tornado`/`Node.js`等全异步的框架不同，Swoole既支持全异步，也支持同步。
+
+除了异步IO的支持之外，Swoole为PHP多进程的模式设计了多个并发数据结构和IPC通信机制，可以大大简化多进程并发编程的工作。其中包括了[并发原子计数器](https://wiki.swoole.com/wiki/page/p-atomic.html)，[并发HashTable](https://wiki.swoole.com/wiki/page/p-table.html)，[Channel](https://wiki.swoole.com/wiki/page/p-channel.html)，[Lock](https://wiki.swoole.com/wiki/page/p-lock.html)，[进程间通信IPC](https://wiki.swoole.com/wiki/page/363.html)等丰富的功能特性。
+
+Swoole从2.0版本开始支持了**内置协程**，可以使用完全同步的代码实现异步程序。PHP代码无需额外增加任何关键词，底层自动进行协程调度，实现异步。
+
+**Swoole**可以广泛应用于互联网、移动通信、企业软件、网络游戏、物联网、车联网、智能家庭等领域。 使用`PHP+Swoole`作为网络通信框架，可以使企业IT研发团队的效率大大提升，更加专注于开发创新产品。
+
+Swoole是开源免费的自由软件，授权协议是`Apache2.0`。企业和个人开发者均可免费使用Swoole的代码，并且在Swoole之上所作的修改可用于商业产品，无需开源（注：必须保留原作者的版权声明）。
+
+> `1.8.7`或更高版本已完全兼容`PHP7`
+> `2.0.12`版本开始不再支持`PHP5`
+
+
+
+## 快速索引
+
+- <a href="#0--入门指引">入门指引</a>
+- <a href="#1--Server">Server</a>
+- <a href="#2--Client">Client</a>
+- <a href="#3--Process">Process</a>
+- <a href="#4--Process\Pool">Process\Pool</a>
+- <a href="#5--AsyncIO">AsyncIO</a>
+- <a href="#6--Memory">Memory</a>
+- <a href="#7--HttpServer">HttpServer</a>
+- <a href="#8--WebSocket">WebSocket</a>
+- <a href="#9--协程 Server">协程 Server</a>
+- <a href="#10--协程 Client">协程 Client</a>
+- <a href="#11--协程 Socket">协程 Socket</a>
+- <a href="#12--Redis\Server">Redis\Server</a>
+- <a href="#13--高级">高级</a>
+- <a href="#14--其他">其他</a>
+
+
+
+
+## 全量目录
 
 - ### **1**  <a href="doc/1 - 入门指引.md">入门指引</a>
     - #### **1.1**  <a href="doc/1.1 - 环境依赖.md">环境依赖</a>
