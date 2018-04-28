@@ -28,7 +28,7 @@ $serv->on('Connect', 'my_onConnect');
 $serv->on('Receive', 'my_onReceive');
 $serv->on('Close', 'my_onClose');
 ```
-PHP中可以使用[4种回调函数的风格](/wiki/page/458.html)
+PHP中可以使用[4种回调函数的风格](https://wiki.swoole.com/wiki/page/458.html)
 
 启动服务器
 ----
@@ -46,8 +46,8 @@ $serv->connections; //当前服务器的客户端连接，可使用foreach遍历
 
 运行流程图
 -----
-![Swoole扩展架构图](/static/uploads/swoole.jpg)
+![Swoole扩展架构图](https://wiki.swoole.com/static/uploads/swoole.jpg)
 
 进程/线程结构图
 -----
-![Swoole进程/线程结构图](/static/image/process.jpg)
+![Swoole进程/线程结构图](https://wiki.swoole.com/static/image/process.jpg)
