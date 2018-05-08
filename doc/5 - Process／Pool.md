@@ -1,4 +1,4 @@
-# Process／Pool
+# Process\Pool
 
 进程池，基于`Server`的`Manager`模块实现。可管理多个工作进程。该模块的核心功能为**进程管理**，相比`Process`实现多进程，`Process\Pool`更加简单，封装层次更高，开发者无需编写过多代码即可实现进程管理功能。
 

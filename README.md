@@ -438,6 +438,7 @@ Swoole是开源免费的自由软件，授权协议是`Apache2.0`。企业和个
         - **`7.3.8`**  <a href="doc/7.3.8 - swoole_table->exist.md">swoole_table->exist</a>
         - **`7.3.9`**  <a href="doc/7.3.9 - swoole_table->del.md">swoole_table->del</a>
         - **`7.3.10`**  <a href="doc/7.3.10 - 常量列表.md">常量列表</a>
+        - **`7.3.11`**  <a href="doc/7.3.11 - swoole_table->count.md">swoole_table->count</a>
     - #### **7.4**  <a href="doc/7.4 - Atomic.md">Atomic</a>
         - **`7.4.1`**  <a href="doc/7.4.1 - swoole_atomic->__construct.md">swoole_atomic->__construct</a>
         - **`7.4.2`**  <a href="doc/7.4.2 - swoole_atomic->add.md">swoole_atomic->add</a>
