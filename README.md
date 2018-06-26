@@ -34,8 +34,8 @@ Swoole是开源免费的自由软件，授权协议是`Apache2.0`。企业和个
 - <a href="#7--process">Process</a>
 - <a href="#8--httpserver">HttpServer</a>
 - <a href="#9--websocket">WebSocket</a>
-- <a href="#10--process\pool">Process\Pool</a>
-- <a href="#11--redis\server">Redis\Server</a>
+- <a href="#10--processpool">Process\Pool</a>
+- <a href="#11--redisserver">Redis\Server</a>
 - <a href="#12--高级">高级</a>
 - <a href="#13--其他">其他</a>
 
