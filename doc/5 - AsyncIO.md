@@ -16,6 +16,7 @@ swoole_async_set(array $setting);
 * `thread_num` 设置异步文件IO线程的数量
 * `aio_mode` 设置异步文件IO的操作模式，目前支持`SWOOLE_AIO_BASE`（使用类似于Node.js的线程池同步阻塞模拟异步）、`SWOOLE_AIO_LINUX`（Linux Native AIO） 2种模式
 * `enable_signalfd` 开启和关闭`signalfd`特性的使用
+* `enable_reuse_port` 开启端口复用，需要`Linux-3.10`或更高版本内核，开启后`BASE`模式下每个工作进程都会监听端口，可避免惊群问题
 * `socket_buffer_size` 设置SOCKET内存缓存区尺寸
 * `socket_dontwait` 在内存缓存区已满的情况下禁止底层阻塞等待
 * `log_file` 设置日志文件路径

@@ -220,6 +220,7 @@ Swoole是开源免费的自由软件，授权协议是`Apache2.0`。企业和个
         - **`2.3.48`**  <a href="doc/2.3.48 - tcp_fastopen.md">tcp_fastopen</a>
         - **`2.3.49`**  <a href="doc/2.3.49 - request_slowlog_file.md">request_slowlog_file</a>
         - **`2.3.50`**  <a href="doc/2.3.50 - enable_coroutine.md">enable_coroutine</a>
+        - **`2.3.51`**  <a href="doc/2.3.51 - max_coroutine.md">max_coroutine</a>
     - #### **2.4**  <a href="doc/2.4 - 监听端口.md">监听端口</a>
         - **`2.4.1`**  <a href="doc/2.4.1 - 可选参数.md">可选参数</a>
         - **`2.4.2`**  <a href="doc/2.4.2 - 可选回调.md">可选回调</a>
@@ -334,6 +335,10 @@ Swoole是开源免费的自由软件，授权协议是`Apache2.0`。企业和个
         - **`4.2.4`**  <a href="doc/4.2.4 - Coroutine／Channel->stats.md">Coroutine\Channel->stats</a>
         - **`4.2.5`**  <a href="doc/4.2.5 - Coroutine／Channel->close.md">Coroutine\Channel->close</a>
         - **`4.2.6`**  <a href="doc/4.2.6 - Coroutine／Channel::select.md">Coroutine\Channel::select</a>
+        - **`4.2.7`**  <a href="doc/4.2.7 - Coroutine／Channel->length.md">Coroutine\Channel->length</a>
+        - **`4.2.8`**  <a href="doc/4.2.8 - Coroutine／Channel->isEmpty.md">Coroutine\Channel->isEmpty</a>
+        - **`4.2.9`**  <a href="doc/4.2.9 - Coroutine／Channel->isFull.md">Coroutine\Channel->isFull</a>
+        - **`4.2.10`**  <a href="doc/4.2.10 - Coroutine／Channel->$capacity.md">Coroutine\Channel->$capacity</a>
     - #### **4.3**  <a href="doc/4.3 - Coroutine／Client.md">Coroutine\Client</a>
         - **`4.3.1`**  <a href="doc/4.3.1 - Coroutine／Client->connect.md">Coroutine\Client->connect</a>
         - **`4.3.2`**  <a href="doc/4.3.2 - Coroutine／Client->send.md">Coroutine\Client->send</a>
@@ -401,13 +406,14 @@ Swoole是开源免费的自由软件，授权协议是`Apache2.0`。企业和个
         - **`4.12.1`**  <a href="doc/4.12.1 - 协程与线程.md">协程与线程</a>
         - **`4.12.2`**  <a href="doc/4.12.2 - 发送数据协程调度.md">发送数据协程调度</a>
         - **`4.12.3`**  <a href="doc/4.12.3 - 协程内存开销.md">协程内存开销</a>
+        - **`4.12.4`**  <a href="doc/4.12.4 - 4.0 协程实现原理.md">4.0 协程实现原理</a>
     - #### **4.13**  <a href="doc/4.13 - 常见问题.md">常见问题</a>
         - **`4.13.1`**  <a href="doc/4.13.1 - 运行中出现 Fatal error: Maximum function nesting level of '1000' reached, aborting!.md">运行中出现 Fatal error: Maximum function nesting level of '1000' reached, aborting!</a>
         - **`4.13.2`**  <a href="doc/4.13.2 - 为什么只能在回调函数中使用协程客户端.md">为什么只能在回调函数中使用协程客户端</a>
         - **`4.13.3`**  <a href="doc/4.13.3 - 支持协程的回调方法列表.md">支持协程的回调方法列表</a>
     - #### **4.14**  <a href="doc/4.14 - 编程须知.md">编程须知</a>
         - **`4.14.1`**  <a href="doc/4.14.1 - 在多个协程间共用同一个协程客户端.md">在多个协程间共用同一个协程客户端</a>
-        - **`4.14.2`**  <a href="doc/4.14.2 - 禁止使用协程 API 的场景.md">禁止使用协程 API 的场景</a>
+        - **`4.14.2`**  <a href="doc/4.14.2 - 禁止使用协程 API 的场景 (Swoole4以下版本).md">禁止使用协程 API 的场景 (Swoole4以下版本)</a>
         - **`4.14.3`**  <a href="doc/4.14.3 - 使用类静态变量／全局变量保存上下文.md">使用类静态变量/全局变量保存上下文</a>
 - ### **5**  <a href="doc/5 - AsyncIO.md">AsyncIO</a>
     - #### **5.1**  <a href="doc/5.1 - 异步文件系统IO.md">异步文件系统IO</a>
@@ -729,5 +735,6 @@ Swoole是开源免费的自由软件，授权协议是`Apache2.0`。企业和个
         - **`13.16.10`**  <a href="doc/13.16.10 - 2.1.2.md">2.1.2</a>
         - **`13.16.11`**  <a href="doc/13.16.11 - 2.2.0.md">2.2.0</a>
         - **`13.16.12`**  <a href="doc/13.16.12 - 3.0.0.md">3.0.0</a>
+    - #### **13.19**  <a href="doc/13.19 - 参与开源项目指引.md">参与开源项目指引</a>
 
 

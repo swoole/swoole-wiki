@@ -6,7 +6,9 @@ Swoole在`2.0`开始内置**协程(Coroutine)**的能力，提供了具备协程
 
 > `2.0.8`或更高版本已默认开启`--enable-coroutine`，可使用`--disable-coroutine`关闭协程特性
 
-> `4.0.1`或更高版本去除了`--enable-coroutine`编译选项, 改为动态配置
+>从2.0.12版本开始不再支持PHP5
+
+> `4.0.0`或更高版本仅支持PHP7.1及以上版本，`4.0.1`版本开始去除了`--enable-coroutine`编译选项, 改为动态配置
 
 > enable_coroutine动态配置请见[文档](https://wiki.swoole.com/wiki/page/949.html)
 
@@ -27,7 +29,7 @@ Swoole在`2.0`开始内置**协程(Coroutine)**的能力，提供了具备协程
 可以满足大部分开发者的需求。对于私有协议，开发者可以使用协程的TCP或者UDP接口去方便的封装。
 
 ## 启用 
-### Prerequisite:
+### 环境要求:
 
 * PHP版本要求：**>= 7.0**，包括7.0、7.1、7.2
 * 基于`swoole_server`或者`swoole_http_server`进行开发，目前只支持在`onRequet`, `onReceive`, `onConnect`等事件回调函数中使用协程。
