@@ -8,6 +8,8 @@ Swoole在`2.0`开始内置**协程(Coroutine)**的能力，提供了具备协程
 
 >从2.0.12版本开始不再支持PHP5
 
+---
+
 > `4.0.0`或更高版本仅支持PHP7.1及以上版本，`4.0.1`版本开始去除了`--enable-coroutine`编译选项, 改为动态配置
 
 > enable_coroutine动态配置请见[文档](https://wiki.swoole.com/wiki/page/949.html)
