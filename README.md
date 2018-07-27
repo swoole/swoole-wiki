@@ -68,10 +68,11 @@ Swoole是开源免费的自由软件，授权协议是`Apache2.0`。企业和个
         - **`1.4.4`**  <a href="doc/1.4.4 - stat缓存清理.md">stat缓存清理</a>
         - **`1.4.5`**  <a href="doc/1.4.5 - mt_rand随机数.md">mt_rand随机数</a>
     - #### **1.5**  <a href="doc/1.5 - 版本更新记录.md">版本更新记录</a>
-        - **`1.5.1`**  <a href="doc/1.5.1 - 4.0.2.md">4.0.2</a>
-        - **`1.5.2`**  <a href="doc/1.5.2 - 4.0.3.md">4.0.3</a>
-        - **`1.5.3`**  <a href="doc/1.5.3 - 4.0.1.md">4.0.1</a>
-        - **`1.5.4`**  <a href="doc/1.5.4 - 4.0.0.md">4.0.0</a>
+        - **`1.5.1`**  <a href="doc/1.5.1 - 4.0.4.md">4.0.4</a>
+        - **`1.5.2`**  <a href="doc/1.5.2 - 4.0.2.md">4.0.2</a>
+        - **`1.5.3`**  <a href="doc/1.5.3 - 4.0.3.md">4.0.3</a>
+        - **`1.5.4`**  <a href="doc/1.5.4 - 4.0.1.md">4.0.1</a>
+        - **`1.5.5`**  <a href="doc/1.5.5 - 4.0.0.md">4.0.0</a>
     - #### **1.6**  <a href="doc/1.6 - 新特性使用.md">新特性使用</a>
         - **`1.6.1`**  <a href="doc/1.6.1 - 2.1.2 进程池模块的使用.md">2.1.2 进程池模块的使用</a>
         - **`1.6.2`**  <a href="doc/1.6.2 - 1.9.24 调度支持 Stream 模式.md">1.9.24 调度支持 Stream 模式</a>
@@ -340,6 +341,7 @@ Swoole是开源免费的自由软件，授权协议是`Apache2.0`。企业和个
         - **`4.2.8`**  <a href="doc/4.2.8 - Coroutine／Channel->isEmpty.md">Coroutine\Channel->isEmpty</a>
         - **`4.2.9`**  <a href="doc/4.2.9 - Coroutine／Channel->isFull.md">Coroutine\Channel->isFull</a>
         - **`4.2.10`**  <a href="doc/4.2.10 - Coroutine／Channel->$capacity.md">Coroutine\Channel->$capacity</a>
+        - **`4.2.11`**  <a href="doc/4.2.11 - Coroutine／Channel->$errCode.md">Coroutine\Channel->$errCode</a>
     - #### **4.3**  <a href="doc/4.3 - Coroutine／Client.md">Coroutine\Client</a>
         - **`4.3.1`**  <a href="doc/4.3.1 - Coroutine／Client->connect.md">Coroutine\Client->connect</a>
         - **`4.3.2`**  <a href="doc/4.3.2 - Coroutine／Client->send.md">Coroutine\Client->send</a>
