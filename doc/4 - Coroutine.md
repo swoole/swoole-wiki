@@ -69,21 +69,16 @@ $http->start();
 2. 请勿在**2.2以下的版本**的以下场景中触发协程切换：
     * 析构函数
     * 魔术方法`__call()` `__get()` `__set()` 等
-3. gcc 4.4下如果在编译swoole的时候（即make阶段），出现gcc warning：
-`dereferencing pointer ‘v.327’ does break strict-aliasing rules`、
-`dereferencing type-punned pointer will break strict-aliasing rules`
-请手动编辑Makefile，将` CFLAGS = -Wall -pthread -g -O2`替换为`CFLAGS = -Wall -pthread -g -O2 -fno-strict-aliasing`，然后重新编译`make clean;make;make install`
-4. 与xdebug、xhprof、blackfire等zend扩展不兼容，例如不能使用xhprof对协程server进行性能分析采样。
-5. 原生的call_user_func和call_user_func_array中无法使用协程client，请使用\Swoole\Coroutine::call_user_func和\Swoole\Coroutine::call_user_func_array代替,在PHP7中如果无法保证在编译时反射调用的类是编译器已知的，请统一使用协程版反射调用
+3. 与xdebug、xhprof、blackfire等zend扩展不兼容，例如不能使用xhprof对协程server进行性能分析采样。
 
 协程组件
 ---------
 1. TCP/UDP Client：`Swoole\Coroutine\Client`
 2. HTTP/WebSocket Client：`Swoole\Coroutine\HTTP\Client`
 3. HTTP2 Client：`Swoole\Coroutine\HTTP2\Client`
-3. Redis Client：`Swoole\Coroutine\Redis`
-4. Mysql Client：`Swoole\Coroutine\MySQL`
-4. Postgresql Client：`Swoole\Coroutine\PostgreSQL`
+4. Redis Client：`Swoole\Coroutine\Redis`
+5. Mysql Client：`Swoole\Coroutine\MySQL`
+6. Postgresql Client：`Swoole\Coroutine\PostgreSQL`
 
 * 在协程`Server`中需要使用协程版`Client`，可以实现全异步`Server`
 * 其他程序中可以使用`go`关键词手工创建协程

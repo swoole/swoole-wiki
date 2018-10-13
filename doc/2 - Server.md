@@ -51,3 +51,4 @@ $serv->connections; //当前服务器的客户端连接，可使用foreach遍历
 进程/线程结构图
 -----
 ![Swoole进程/线程结构图](https://wiki.swoole.com/static/image/process.jpg)
+![进程/线程结构图2](https://wiki.swoole.com/static/uploads/wiki/201808/03/635680420659.png "进程/线程结构图2")

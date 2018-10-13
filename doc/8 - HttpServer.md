@@ -1,6 +1,5 @@
 # HttpServer
 
-
 > **swoole_http_server对Http协议的支持并不完整，建议仅作为应用服务器。并且在前端增加Nginx作为代理**
 
 swoole-1.7.7增加了内置Http服务器的支持，通过几行代码即可写出一个异步非阻塞多进程的Http服务器。
@@ -22,8 +21,8 @@ ab -c 200 -n 200000 -k http://127.0.0.1:9501
 使用Http2协议
 ----
 * 需要依赖`nghttp2`库，[下载nghttp2](https://github.com/tatsuhiro-t/nghttp2)后编译安装
-* 使用`Http2`协议必须开启`openssl`
-* 需要高版本`openssl`必须支持`TLS1.2`、`ALPN`、`NPN`
+* 使用SSL下的`Http2`协议必须安装`openssl`, 且需要高版本`openssl`必须支持`TLS1.2`、`ALPN`、`NPN`
+* 使用HTTP2不一定要开启SSL
 
 ```shell
 ./configure --enable-openssl --enable-http2
