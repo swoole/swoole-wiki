@@ -1,15 +1,15 @@
 # Server
 
-创建一个异步服务器程序，支持TCP、UDP、UnixSocket 3种协议，支持IPv4和IPv6，支持SSL/TLS单向双向证书的隧道加密。使用者无需关注底层实现细节，仅需要设置网络事件的回调函数即可。
+创建一个异步服务器程序，支持`TCP`、`UDP`、`UnixSocket` `3`种协议，支持`IPv4`和`IPv6`，支持`SSL/TLS`单向双向证书的隧道加密。使用者无需关注底层实现细节，仅需要设置网络事件的回调函数即可。
 
-**请勿在使用`swoole_server`之前调用其他异步IO的API，否则将无法创建`swoole_server`。**可以在Server启动后，`onWorkerStart`回调函数中使用。
+**请勿在使用`Server`创建之前调用其他异步`IO`的`API`，否则将会创建失败。**可以在`Server`启动后`onWorkerStart`回调函数中使用。
 
-> swoole_server只能用于php-cli环境，否则会抛出致命错误
+> `Server`只能用于`php-cli`环境，在其他环境下会抛出致命错误
 
 构建Server对象
 ----
 ```php
-$serv = new swoole_server('0.0.0.0', 9501, SWOOLE_BASE, SWOOLE_SOCK_TCP);
+$serv = new Swoole\Server('0.0.0.0', 9501, SWOOLE_BASE, SWOOLE_SOCK_TCP);
 ```
 
 设置运行时参数
